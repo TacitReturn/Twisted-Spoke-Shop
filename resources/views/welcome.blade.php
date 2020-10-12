@@ -9,19 +9,19 @@
     <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
 
     <!-- Styles -->
-    <link href="assets/css/page.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ secure_asset('css/page.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="{{ secure_asset('img/apple-touch-icon.png') }}">
+    <link rel="icon" href="{{ secure_asset('img/favicon.png') }}">
 
     <!--  Open Graph Tags -->
-    <meta property="og:title" content="TheSaaS">
-    <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
-    <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
-    <meta property="og:url" content="http://thetheme.io/thesaas/">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Twisted Spoke CBD Shop">
+    <meta property="og:description" content="A resourceful online CBD shop.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://rudge-software.com">
+    <meta name="twitter:card" content="">
 </head>
 
 <body>
@@ -34,8 +34,8 @@
         <div class="navbar-left">
             <button class="navbar-toggler" type="button">&#9776;</button>
             <a class="navbar-brand" href="index.html">
-                <img class="logo-dark" src="assets/img/logo-dark.png" alt="logo">
-                <img class="logo-light" src="assets/img/logo-light.png" alt="logo">
+                <img class="logo-dark" src="{{ secure_asset('img/logo-dark.png') }}" alt="logo">
+                <img class="logo-light" src="{{ secure_asset('img/logo-light.png') }}" alt="logo">
             </a>
         </div>
 
@@ -67,46 +67,188 @@
 
 
 <!-- Main Content -->
+
+<!-- Main Content -->
 <main class="main-content">
 
-
-    <!--
-    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-    | Populate the page
-    |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-    !-->
-    <section class="section">
+    <section class="section bg-gray">
         <div class="container">
-            <header class="section-header">
-                <small>Content</small>
-                <h2>How To Get Started</h2>
-                <hr>
-            </header>
+            <div class="row gap-y">
 
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <span class="badge badge-pill badge-primary badge-pos-left">New</span>
+                            <img src="../assets/img/shop/10.jpg" alt="product">
+                        </a>
 
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <p><strong>1. <a href="readme.html">Read me</a></strong> file is the staring point. It includes some guides and FAQs which answers most of your questions. So you should start reading now if you haven't.</p>
-
-                    <p><strong>2. <a href="http://thetheme.io/thesaas/uikit/navbar.html" target="_blank">Navbar</a></strong> is a must have components for most of websites. Lean about navbars to create your own or use any of the available samples by visiting navbar documentation.</p>
-
-                    <p><strong>3. <a href="http://thetheme.io/thesaas/block/header.html" target="_blank">Header</a> or <a href="http://thetheme.io/thesaas/block/cover.html" target="_blank">Cover</a></strong> is the next step. Create or use one of the available headers for your internal pages or get inspired by our sample covers for your homepage.</p>
-
-                    <p><strong>4. <a href="http://thetheme.io/thesaas/block/footer.html" target="_blank">Footer</a></strong> is a mandatory part of most websites. Get a sample footer, make it yours, and use it in all of the pages. Feel free to change the background color of footers using utility classes.</p>
-
-                    <p><strong>5. <a href="http://thetheme.io/thesaas/block/" target="_blank">Blocks</a></strong> are the content here. We have hundreds of blocks, categorized in more than 20 pages. Simply pick what you need and change the text and image of the block and you're good to go.</p>
-
-                    <p><strong>6. <a href="http://thetheme.io/thesaas/uikit/" target="_blank">UI Kit</a></strong> is the final destination for your creativity. If you need to create a custom block or get enough knowledge for modifying the existing blocks, this is the place.</p>
+                        <div class="product-detail">
+                            <h6><a href="#">Apple EarPods</a></h6>
+                            <div class="product-price">$160</div>
+                        </div>
+                    </div>
                 </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <div class="product-media">
+                            <span class="badge badge-pill badge-primary badge-pos-left">New</span>
+                            <div class="slider-dots-inside" data-provide="slider" data-dots="true">
+                                <a href="item.html">
+                                    <img src="../assets/img/shop/11.jpg" alt="product">
+                                </a>
+                                <a href="item.html">
+                                    <img src="../assets/img/shop/13.jpg" alt="product">
+                                </a>
+                                <a href="item.html"><img src="../assets/img/shop/14.jpg" alt="product"></a>
+                            </div>
+                        </div>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Beats On-Ear Headphones</a></h6>
+                            <div class="product-price">$299</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <span class="badge badge-pill badge-success badge-pos-right">-25%</span>
+                            <img src="../assets/img/shop/12.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Sony PlayStation 4</a></h6>
+                            <div class="product-price"><s>$299</s> $224</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <span class="badge badge-pill badge-success badge-pos-right">-20%</span>
+                            <img src="../assets/img/shop/13.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Hanging Speaker</a></h6>
+                            <div class="product-price"><s>$99</s> $79</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <img src="../assets/img/shop/14.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Beats On-Ear Headphones — Black</a></h6>
+                            <div class="product-price">$189</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <div class="product-media">
+                            <div class="slider-dots-inside" data-provide="slider" data-dots="true">
+                                <a href="item.html">
+                                    <img src="../assets/img/shop/15.jpg" alt="product">
+                                </a>
+                                <a href="item.html">
+                                    <img src="../assets/img/shop/23.jpg" alt="product">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Shiny Shoe</a></h6>
+                            <div class="product-price">$128</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <img src="../assets/img/shop/16.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">PS4 DualShock Controller</a></h6>
+                            <div class="product-price">$52</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <img src="../assets/img/shop/17.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Antique Camera K145</a></h6>
+                            <div class="product-price">$677</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="product-3 mb-3">
+                        <a class="product-media" href="item.html">
+                            <span class="badge badge-pill badge-success badge-pos-right">-33%</span>
+                            <img src="../assets/img/shop/18.jpg" alt="product">
+                        </a>
+
+                        <div class="product-detail">
+                            <h6><a href="#">Apple Mouse</a></h6>
+                            <div class="product-price"><s>$139</s> $99</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+            <nav class="mt-7">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">
+                            <span class="fa fa-angle-left"></span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <span class="fa fa-angle-right"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
 
         </div>
     </section>
 
-
-
 </main>
+
 
 
 <!-- Footer -->
@@ -142,8 +284,8 @@
 
 
 <!-- Scripts -->
-<script src="assets/js/page.min.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="{{ secure_asset('js/page.min.js') }}"></script>
+<script src="{{ secure_asset('js/script.js') }}"></script>
 
 </body>
 </html>
