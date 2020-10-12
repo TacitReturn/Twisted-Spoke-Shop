@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS — Responsive Bootstrap SaaS, Software & WebApp Template</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Styles -->
     <link href="{{ secure_asset('css/page.min.css') }}" rel="stylesheet">
@@ -28,14 +28,15 @@
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+<nav class="navbar navbar-expand-lg navbar-light navbar-stick-light" data-navbar="sticky">
     <div class="container">
 
         <div class="navbar-left">
             <button class="navbar-toggler" type="button">&#9776;</button>
             <a class="navbar-brand" href="index.html">
-                <img class="logo-dark" src="{{ secure_asset('img/logo-dark.png') }}" alt="logo">
-                <img class="logo-light" src="{{ secure_asset('img/logo-light.png') }}" alt="logo">
+{{--                <img class="logo-dark" src="{{ secure_asset('img/logo-dark.png') }}" alt="logo">--}}
+{{--                <img class="logo-light" src="{{ secure_asset('img/logo-light.png') }}" alt="logo">--}}
+                Twisted Spoke
             </a>
         </div>
 
@@ -43,15 +44,15 @@
             <span class="navbar-divider d-mobile-none"></span>
 
             <nav class="nav nav-navbar">
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#">Help</a>
+                <a class="nav-link" href="#">About Us</a>
                 <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">CBD Blog</a>
+                <a class="nav-link" href="#">Help</a>
             </nav>
         </section>
 
-        <a class="btn btn-sm btn-round btn-dark" href="readme.html">Read me</a>
+        <a class="btn btn-sm btn-round btn-dark mr-2" href="readme.html">Register</a>
+        <a class="btn btn-sm btn-round btn-dark" href="readme.html">Login</a>
 
     </div>
 </nav><!-- /.navbar -->
@@ -60,8 +61,12 @@
 <!-- Header -->
 <header class="header text-white pt-12 pb-10" style="background-image: linear-gradient(-45deg, #667eea 0%, #764ba2 100%);">
     <div class="container">
-        <h1 class="display-4">Start New Project</h1>
-        <p class="lead-2 mt-6">This is a starting point for your next awesome project. The skeleton is ready, just populate it.</p>
+        <h1 class="display-4">
+            Stwisted Spoke CBD &middot;
+        </h1>
+        <p class="lead-2 mt-6">
+            This is a starting point for your next awesome project. The skeleton is ready, just populate it.
+        </p>
     </div>
 </header><!-- /.header -->
 
@@ -79,11 +84,11 @@
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
                             <span class="badge badge-pill badge-primary badge-pos-left">New</span>
-                            <img src="../assets/img/shop/10.jpg" alt="product">
+                            <img src="{{ secure_asset('img/products/cbd1.jpeg') }}" alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Apple EarPods</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$160</div>
                         </div>
                     </div>
@@ -96,17 +101,17 @@
                             <span class="badge badge-pill badge-primary badge-pos-left">New</span>
                             <div class="slider-dots-inside" data-provide="slider" data-dots="true">
                                 <a href="item.html">
-                                    <img src="../assets/img/shop/11.jpg" alt="product">
+                                    <img src="{{ secure_asset('img/products/cbd2.webp') }}" alt="product">
                                 </a>
-                                <a href="item.html">
-                                    <img src="../assets/img/shop/13.jpg" alt="product">
-                                </a>
-                                <a href="item.html"><img src="../assets/img/shop/14.jpg" alt="product"></a>
+{{--                                <a href="item.html">--}}
+{{--                                    <img src="../assets/img/shop/13.jpg" alt="product">--}}
+{{--                                </a>--}}
+{{--                                <a href="item.html"><img src="../assets/img/shop/14.jpg" alt="product"></a>--}}
                             </div>
                         </div>
 
                         <div class="product-detail">
-                            <h6><a href="#">Beats On-Ear Headphones</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$299</div>
                         </div>
                     </div>
@@ -117,11 +122,14 @@
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
                             <span class="badge badge-pill badge-success badge-pos-right">-25%</span>
-                            <img src="../assets/img/shop/12.jpg" alt="product">
+                            <img
+                                style="height: 233px; width: 500px; object-fit: cover;"
+                                src="{{ secure_asset('img/products/cbd3.webp') }}"
+                                alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Sony PlayStation 4</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price"><s>$299</s> $224</div>
                         </div>
                     </div>
@@ -132,11 +140,11 @@
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
                             <span class="badge badge-pill badge-success badge-pos-right">-20%</span>
-                            <img src="../assets/img/shop/13.jpg" alt="product">
+                            <img src="{{ secure_asset('img/products/cbd4.jpeg') }}" alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Hanging Speaker</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price"><s>$99</s> $79</div>
                         </div>
                     </div>
@@ -146,11 +154,11 @@
                 <div class="col-md-6 col-xl-4">
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
-                            <img src="../assets/img/shop/14.jpg" alt="product">
+                            <img src="{{ secure_asset('img/products/cbd5.jpeg') }}" alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Beats On-Ear Headphones — Black</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$189</div>
                         </div>
                     </div>
@@ -162,16 +170,19 @@
                         <div class="product-media">
                             <div class="slider-dots-inside" data-provide="slider" data-dots="true">
                                 <a href="item.html">
-                                    <img src="../assets/img/shop/15.jpg" alt="product">
+                                    <img
+                                        style="height: 233px; width: 500px; object-fit: cover;"
+                                        src="{{ secure_asset('img/products/cbd6.jpeg') }}"
+                                        alt="product">
                                 </a>
-                                <a href="item.html">
-                                    <img src="../assets/img/shop/23.jpg" alt="product">
-                                </a>
+{{--                                <a href="item.html">--}}
+{{--                                    <img src="../assets/img/shop/23.jpg" alt="product">--}}
+{{--                                </a>--}}
                             </div>
                         </div>
 
                         <div class="product-detail">
-                            <h6><a href="#">Shiny Shoe</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$128</div>
                         </div>
                     </div>
@@ -181,11 +192,14 @@
                 <div class="col-md-6 col-xl-4">
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
-                            <img src="../assets/img/shop/16.jpg" alt="product">
+                            <img
+                                style="height: 233px; width: 500px; object-fit: cover;"
+                                src="{{ secure_asset('img/products/cbd7.jpeg') }}"
+                                alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">PS4 DualShock Controller</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$52</div>
                         </div>
                     </div>
@@ -195,11 +209,14 @@
                 <div class="col-md-6 col-xl-4">
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
-                            <img src="../assets/img/shop/17.jpg" alt="product">
+                            <img
+                                style="height: 233px; width: 500px; object-fit: cover;"
+                                src="{{ secure_asset('img/products/cbd8.jpeg') }}"
+                                alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Antique Camera K145</a></h6>
+                            <h6><a href="#">Product</a></h6>
                             <div class="product-price">$677</div>
                         </div>
                     </div>
@@ -210,11 +227,14 @@
                     <div class="product-3 mb-3">
                         <a class="product-media" href="item.html">
                             <span class="badge badge-pill badge-success badge-pos-right">-33%</span>
-                            <img src="../assets/img/shop/18.jpg" alt="product">
+                            <img
+                                style="height: 233px; width: 500px; object-fit: cover;"
+                                src="{{ secure_asset('img/products/cbd9.jpeg') }}"
+                                alt="product">
                         </a>
 
                         <div class="product-detail">
-                            <h6><a href="#">Apple Mouse</a></h6>
+                            <h6><a href="#">Products</a></h6>
                             <div class="product-price"><s>$139</s> $99</div>
                         </div>
                     </div>
